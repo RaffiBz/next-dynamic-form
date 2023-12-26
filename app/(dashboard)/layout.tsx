@@ -13,19 +13,27 @@ function Layout({ children }: { children: ReactNode }) {
         dangerouslySetInnerHTML={{
           __html: `
           !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '780533077473014');
-fbq('track', 'PageView');
-      
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '780533077473014');
+          fbq('track', 'PageView');
           `,
         }}
       />
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=780533077473014&ev=PageView&noscript=1"
+        />
+      </noscript>
+
       <div className="flex flex-col min-h-screen min-w-full bg-background max-h-screen">
         <nav className="flex justify-between items-center border-b border-border h-[60px] px-4 py-2">
           <Logo />
