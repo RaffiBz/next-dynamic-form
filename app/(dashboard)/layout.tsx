@@ -33,7 +33,6 @@ function Layout({ children }: { children: ReactNode }) {
           src="https://www.facebook.com/tr?id=780533077473014&ev=PageView&noscript=1"
         />
       </noscript>
-
       <div className="flex flex-col min-h-screen min-w-full bg-background max-h-screen">
         <nav className="flex justify-between items-center border-b border-border h-[60px] px-4 py-2">
           <Logo />
